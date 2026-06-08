@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>VaultofCodes - Internship Programs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<div id="preloader">
+  <div class="pre-logo">VaultofCodes</div>
+  <div class="pre-bar-wrap"><div class="pre-bar"></div></div>
+  <div class="pre-txt">Loading Experience...</div>
+</div>
+
+<div class="blobs">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="blob b3"></div><div class="blob b4"></div>
+</div>
+<div class="float-circles">
+  <div class="fc"></div><div class="fc"></div><div class="fc"></div>
+  <div class="fc"></div><div class="fc"></div>
+</div>
+
+<button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+<button id="back-top" title="Back to top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-badge">
+      <span></span>
+      Now Accepting Applications - 2026
+    </div>
+    <h1 class="hero-title">
+      Launch Your<br>
+      Career with<br>
+      <span class="stroke">Industry</span><br>
+      <span class="grad">Internships</span>
+    </h1>
+    <p class="hero-sub">Gain hands-on experience, build real-world projects, and grow your professional network - all from wherever you are.</p>
+    <div class="hero-cta">
+      <a href="#internships" class="btn btn-teal"><i class="fa-solid fa-compass"></i>Explore Programs</a>
+      <a href="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01" class="btn btn-ghost" target="_blank" rel="noopener"><i class="fa-regular fa-circle-play"></i>How It Works</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num">4+</span><span class="stat-label">Programs</span></div>
+      <div class="stat-item"><span class="stat-num">100%</span><span class="stat-label">Virtual</span></div>
+      <div class="stat-item"><span class="stat-num">1-2</span><span class="stat-label">Months</span></div>
+      <div class="stat-item"><span class="stat-num">Free</span><span class="stat-label">To Apply</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="stat-card-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="stat-card-num" data-target="4">0</div>
+        <div class="stat-card-label">Internship Tracks</div>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="80">
+        <div class="stat-card-icon"><i class="fa-solid fa-laptop-house"></i></div>
+        <div class="stat-card-num" data-target="100" data-suffix="%">0</div>
+        <div class="stat-card-label">Remote Format</div>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="160">
+        <div class="stat-card-icon"><i class="fa-solid fa-list-check"></i></div>
+        <div class="stat-card-num" data-target="6">0</div>
+        <div class="stat-card-label">Project Milestones</div>
+      </div>
+      <div class="stat-card" data-aos="zoom-in" data-aos-delay="240">
+        <div class="stat-card-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="stat-card-num" data-target="2">0</div>
+        <div class="stat-card-label">Month Duration</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-section" id="internships">
+  <div class="wrap">
+    <div class="search-wrap" data-aos="fade-up">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input class="search-input" id="search-input" type="text" placeholder="Search internship programs..." autocomplete="off"/>
+    </div>
+    <div class="filter-bar" data-aos="fade-up" data-aos-delay="80">
+      <button class="filter-btn active" data-filter="all">All Programs</button>
+      <button class="filter-btn" data-filter="web"><i class="fa-solid fa-code"></i> Web Dev</button>
+      <button class="filter-btn" data-filter="app"><i class="fa-solid fa-mobile-screen-button"></i> App Dev</button>
+      <button class="filter-btn" data-filter="python"><i class="fa-brands fa-python"></i> Python</button>
+      <button class="filter-btn" data-filter="java"><i class="fa-brands fa-java"></i> Java</button>
+    </div>
+  </div>
+</section>
+
+<section class="cards-section">
+  <div class="wrap">
+    <div class="cards-grid" id="cards-grid">
+
+      
+      <article class="card" data-cat="web" data-aos="fade-up" data-aos-delay="0"
+        data-title="Web Development Internship Program"
+        data-icon="fa-solid fa-code" data-icon-color="#00c8a0" data-icon-bg="rgba(0,200,160,.1)"
+        data-duration="1 Month / 2 Months" data-location="Virtual" data-stipend="Performance Based"
+        data-start="05 / 11 / 2025" data-skills="HTML,CSS,JavaScript,React,Git"
+        data-link="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01">
+        <div class="card-stripe"></div>
+        <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+        <h3 class="card-title">Web Development<br>Internship Program</h3>
+        <ul class="card-meta">
+          <li><i class="fa-regular fa-clock"></i>1 Month / 2 Months</li>
+          <li><i class="fa-solid fa-location-dot"></i>Virtual</li>
+          <li><i class="fa-solid fa-indian-rupee-sign"></i>Performance Based</li>
+          <li><i class="fa-regular fa-calendar-check"></i>05 / 11 / 2025</li>
+        </ul>
+        <div class="card-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <span class="tag">JavaScript</span><span class="tag">React</span>
+        </div>
+        <button class="btn-card" onclick="openModal(this.closest('.card'))">
+          View Details <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      
+      <article class="card" data-cat="app" data-aos="fade-up" data-aos-delay="80"
+        data-title="App Development Internship Program"
+        data-icon="fa-solid fa-mobile-screen-button" data-icon-color="#818cf8" data-icon-bg="rgba(99,102,241,.1)"
+        data-duration="1 Month / 2 Months" data-location="Virtual" data-stipend="Performance Based"
+        data-start="05 / 11 / 2025" data-skills="Flutter,Dart,Firebase,REST APIs,Android"
+        data-link="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01">
+        <div class="card-stripe"></div>
+        <div class="card-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3 class="card-title">App Development<br>Internship Program</h3>
+        <ul class="card-meta">
+          <li><i class="fa-regular fa-clock"></i>1 Month / 2 Months</li>
+          <li><i class="fa-solid fa-location-dot"></i>Virtual</li>
+          <li><i class="fa-solid fa-indian-rupee-sign"></i>Performance Based</li>
+          <li><i class="fa-regular fa-calendar-check"></i>05 / 11 / 2025</li>
+        </ul>
+        <div class="card-tags">
+          <span class="tag">Flutter</span><span class="tag">Dart</span>
+          <span class="tag">Firebase</span><span class="tag">REST APIs</span>
+        </div>
+        <button class="btn-card" onclick="openModal(this.closest('.card'))">
+          View Details <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      
+      <article class="card" data-cat="python" data-aos="fade-up" data-aos-delay="160"
+        data-title="Python Programming Internship Program"
+        data-icon="fa-brands fa-python" data-icon-color="#f59e0b" data-icon-bg="rgba(245,158,11,.1)"
+        data-duration="1 Month / 2 Months" data-location="Virtual" data-stipend="Performance Based"
+        data-start="05 / 11 / 2025" data-skills="Python,Django,Pandas,NumPy,ML Basics"
+        data-link="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01">
+        <div class="card-stripe"></div>
+        <div class="card-icon"><i class="fa-brands fa-python"></i></div>
+        <h3 class="card-title">Python Programming<br>Internship Program</h3>
+        <ul class="card-meta">
+          <li><i class="fa-regular fa-clock"></i>1 Month / 2 Months</li>
+          <li><i class="fa-solid fa-location-dot"></i>Virtual</li>
+          <li><i class="fa-solid fa-indian-rupee-sign"></i>Performance Based</li>
+          <li><i class="fa-regular fa-calendar-check"></i>05 / 11 / 2025</li>
+        </ul>
+        <div class="card-tags">
+          <span class="tag">Python</span><span class="tag">Django</span>
+          <span class="tag">Pandas</span><span class="tag">ML Basics</span>
+        </div>
+        <button class="btn-card" onclick="openModal(this.closest('.card'))">
+          View Details <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+      
+      <article class="card" data-cat="java" data-aos="fade-up" data-aos-delay="240"
+        data-title="Java Programming Internship Program"
+        data-icon="fa-brands fa-java" data-icon-color="#f43f5e" data-icon-bg="rgba(244,63,94,.1)"
+        data-duration="1 Month / 2 Months" data-location="Virtual" data-stipend="Performance Based"
+        data-start="05 / 11 / 2025" data-skills="Java,Spring Boot,JDBC,OOP,DSA"
+        data-link="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01">
+        <div class="card-stripe"></div>
+        <div class="card-icon"><i class="fa-brands fa-java"></i></div>
+        <h3 class="card-title">Java Programming<br>Internship Program</h3>
+        <ul class="card-meta">
+          <li><i class="fa-regular fa-clock"></i>1 Month / 2 Months</li>
+          <li><i class="fa-solid fa-location-dot"></i>Virtual</li>
+          <li><i class="fa-solid fa-indian-rupee-sign"></i>Performance Based</li>
+          <li><i class="fa-regular fa-calendar-check"></i>05 / 11 / 2025</li>
+        </ul>
+        <div class="card-tags">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span>
+          <span class="tag">JDBC</span><span class="tag">OOP</span>
+        </div>
+        <button class="btn-card" onclick="openModal(this.closest('.card'))">
+          View Details <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-icon" id="modal-icon"></div>
+    <h2 id="modal-title"></h2>
+    <p class="modal-sub" id="modal-sub"></p>
+    <div class="modal-grid">
+      <div class="modal-item"><div class="modal-item-label">Duration</div><div class="modal-item-val" id="modal-duration"></div></div>
+      <div class="modal-item"><div class="modal-item-label">Location</div><div class="modal-item-val" id="modal-location"></div></div>
+      <div class="modal-item"><div class="modal-item-label">Stipend</div><div class="modal-item-val" id="modal-stipend"></div></div>
+      <div class="modal-item"><div class="modal-item-label">Start Date</div><div class="modal-item-val" id="modal-start"></div></div>
+    </div>
+    <div class="modal-skills" id="modal-skills"></div>
+    <div class="modal-cta">
+      <a id="modal-apply-btn" href="#" class="btn btn-teal" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i>Apply Now</a>
+      <button class="btn btn-ghost" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<section class="benefits-section">
+  <div class="wrap">
+    <p class="label" data-aos="fade-right">Why Choose Our Internship</p>
+    <h2 class="section-title" data-aos="fade-up">Everything you need<br>for a strong internship portfolio.</h2>
+    <p class="section-sub" data-aos="fade-up" data-aos-delay="80">The program focuses on practical learning, guided milestones, and professional proof of completion.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="benefit-icon"><i class="fa-solid fa-certificate"></i></div>
+        <h3>Internship Certificate</h3>
+        <p>Receive a clean completion certificate after finishing the required tasks and final project.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="benefit-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+        <h3>Letter of Recommendation</h3>
+        <p>Eligible high-performing interns can receive a recommendation letter for future applications.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="benefit-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Live Projects</h3>
+        <p>Build practical project work that can be added to your GitHub profile or student portfolio.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="180">
+        <div class="benefit-icon"><i class="fa-solid fa-handshake"></i></div>
+        <h3>Placement Support</h3>
+        <p>Get resume guidance, interview preparation tips, and direction for beginner-friendly job applications.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="benefit-icon"><i class="fa-solid fa-user-tie"></i></div>
+        <h3>Industry Mentors</h3>
+        <p>Learn with mentor-style guidance, project feedback, and practical advice for improving your work.</p>
+      </div>
+      <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="benefit-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <h3>Flexible Schedule</h3>
+        <p>Work at your own pace with async tasks, weekly check-ins, and no mandatory fixed-hour commitments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <div class="wrap">
+    <p class="label" data-aos="fade-right">Your Journey</p>
+    <h2 class="section-title" data-aos="fade-up">From application<br>to placement.</h2>
+    <div class="timeline-track" id="timeline-track">
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="0">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-paper-plane"></i></div>
+        <div class="tl-label">Apply</div>
+        <div class="tl-num">Step 01</div>
+      </div>
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="80">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-magnifying-glass"></i></div>
+        <div class="tl-label">Selection</div>
+        <div class="tl-num">Step 02</div>
+      </div>
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="160">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-chalkboard-user"></i></div>
+        <div class="tl-label">Training</div>
+        <div class="tl-num">Step 03</div>
+      </div>
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="240">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-laptop-code"></i></div>
+        <div class="tl-label">Project Work</div>
+        <div class="tl-num">Step 04</div>
+      </div>
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="320">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-certificate"></i></div>
+        <div class="tl-label">Certification</div>
+        <div class="tl-num">Step 05</div>
+      </div>
+      <div class="tl-item" data-aos="zoom-in" data-aos-delay="400">
+        <div class="tl-dot"><i class="tl-icon fa-solid fa-rocket"></i></div>
+        <div class="tl-label">Career Support</div>
+        <div class="tl-num">Step 06</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section" id="skills">
+  <div class="wrap">
+    <div class="skills-head">
+      <div>
+        <p class="label" data-aos="fade-right">Skills You Will Learn</p>
+        <h2 class="section-title" data-aos="fade-up">Build practical skills,<br>for real internship work.</h2>
+      </div>
+      <p class="skills-note" data-aos="fade-up" data-aos-delay="80">Each track focuses on tools students can show in assignments, portfolios, GitHub repositories, and interview discussions.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="skill-track" data-aos="fade-up" data-aos-delay="0">
+        <div class="skill-top"><div class="skill-icon"><i class="fa-solid fa-code"></i></div><div><h3 class="skill-title">Web Development Track</h3><p class="skill-sub">Frontend fundamentals with responsive project work</p></div></div>
+        <div class="skill-tags"><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React</span><span class="skill-tag">Git</span><span class="skill-tag">Responsive Design</span></div>
+        <div class="skill-progress"><div class="progress-row"><span>Frontend</span><div class="progress-bar"><i class="progress-fill" style="--w:92%"></i></div><span>92%</span></div><div class="progress-row"><span>Interactivity</span><div class="progress-bar"><i class="progress-fill" style="--w:84%"></i></div><span>84%</span></div><div class="progress-row"><span>Deployment</span><div class="progress-bar"><i class="progress-fill" style="--w:78%"></i></div><span>78%</span></div></div>
+      </article>
+      <article class="skill-track" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-top"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><div><h3 class="skill-title">Python Programming Track</h3><p class="skill-sub">Programming logic, data handling, and API basics</p></div></div>
+        <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">NumPy</span><span class="skill-tag">Pandas</span><span class="skill-tag">APIs</span><span class="skill-tag">ML Basics</span><span class="skill-tag">Automation</span></div>
+        <div class="skill-progress"><div class="progress-row"><span>Core Python</span><div class="progress-bar"><i class="progress-fill" style="--w:90%"></i></div><span>90%</span></div><div class="progress-row"><span>Data Tools</span><div class="progress-bar"><i class="progress-fill" style="--w:82%"></i></div><span>82%</span></div><div class="progress-row"><span>ML Basics</span><div class="progress-bar"><i class="progress-fill" style="--w:72%"></i></div><span>72%</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cert-section">
+  <div class="wrap">
+    <div class="cert-inner">
+      <div>
+        <p class="label" data-aos="fade-right">Your Credential</p>
+        <h2 class="section-title" data-aos="fade-up">A professional<br>certificate preview.</h2>
+        <p class="section-sub" data-aos="fade-up" data-aos-delay="80">Every intern who successfully completes their program receives a clean completion certificate that can be added to a portfolio or LinkedIn profile.</p>
+        <div style="margin-top:36px;display:flex;flex-direction:column;gap:14px" data-aos="fade-up" data-aos-delay="160">
+          <div style="display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--muted)">
+            <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Unique completion ID
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--muted)">
+            <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> LinkedIn-ready shareable format
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--muted)">
+            <i class="fa-solid fa-circle-check" style="color:var(--teal)"></i> Letter of Recommendation for eligible performers
+          </div>
+        </div>
+      </div>
+      <div class="cert-preview" data-aos="zoom-in" data-aos-delay="100">
+        <div class="cert-card">
+          <div class="cert-badge">VOC<br>Cert</div>
+          <div class="cert-watermark">VOC</div>
+          <div class="cert-logo">VaultofCodes</div>
+          <div class="cert-decor"></div>
+          <div class="cert-title-sm">This is to certify that</div>
+          <div class="cert-name">Happy Saini</div>
+          <div class="cert-main">is Currently Pursuing<br>Web Development Internship</div>
+          <div class="cert-sub">Duration: 2 Months &nbsp;-&nbsp; Mode: Virtual &nbsp;-&nbsp; Year: 2025<br>with outstanding performance and professional dedication.</div>
+          <div class="cert-footer">
+            <div class="cert-sig">Founder, VaultofCodes</div>
+            <div class="cert-id">ID: happy.2428cs227@kiet.edu</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="wrap">
+    <p class="label" data-aos="fade-right">Got Questions?</p>
+    <h2 class="section-title" data-aos="fade-up" style="text-align:center;max-width:100%">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="faq-q"><span>Is internship remote?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. The internship is virtual, so students can complete training tasks, project work, and submissions from home with a flexible schedule.</div></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="faq-q"><span>Will I get a certificate?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Students who complete the required tasks and final project receive an internship completion certificate with a unique completion ID.</div></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="120">
+        <div class="faq-q"><span>What is the duration?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">The available internship durations are 1 month and 2 months. Students can choose the option that fits their college schedule and learning goals.</div></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="180">
+        <div class="faq-q"><span>Is placement support available?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Career support is included through resume tips, project portfolio guidance, interview preparation, and direction on how to apply for beginner-friendly roles.</div></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="240">
+        <div class="faq-q"><span>Can I apply for multiple programs?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes, but it is better to complete one track first so your final project is focused and portfolio-ready.</div></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-q"><span>Do I need prior experience?</span><div class="faq-q-icon"><i class="fa-solid fa-plus"></i></div></div>
+        <div class="faq-a"><div class="faq-a-inner">Basic computer knowledge is enough for beginner tracks. The roadmap starts with fundamentals and moves toward project work step by step.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-inner" data-aos="zoom-in">
+      <div class="cta-text">
+        <h2>Ready to start<br>your journey?</h2>
+        <p>Applications are open - secure your spot before they fill up.</p>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="https://www.vaultofcodes.in/wlp/webinar-xnigwq-01" class="btn btn-teal" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i>Apply Now</a>
+        <a href="#internships" class="btn btn-ghost"><i class="fa-solid fa-compass"></i>Browse Programs</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
